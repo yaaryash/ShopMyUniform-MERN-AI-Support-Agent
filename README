@@ -1,3 +1,5 @@
+# ShopMyUniform — MERN + AI Support Agent
+
 ## Technology Stack
 - Frontend: React (Vite)
 - Backend: Node.js + Express
@@ -19,14 +21,21 @@ OPENAI_API_KEY=your_openai_key
 ## Database Structure
 - School: name, city, grades[]
 - User: name, email, password (hashed), role, studentName, grade, school (ref), phone, address
-- Product: TBD
-- Order: TBD
+- Product: name, description, category, color, gender, school (ref), applicableGrades[], price, images[], sizes[{size, stock}], isActive
+- Order: user (ref), items[{product (ref), name, size, quantity, price}], totalAmount, shippingAddress, status, statusHistory[{status, date, note}], estimatedDelivery, paymentMethod
+
+## API Endpoints
+| Method | Endpoint | Auth | Description |
+|---|---|---|---|
+| POST | /api/auth/register | — | Register a new account |
+| POST | /api/auth/login | — | Login, returns JWT |
+| GET | /api/auth/profile | ✅ | Get logged-in user's profile |
+| PUT | /api/auth/profile | ✅ | Update profile |
 
 ## Status
 - [x] Server + MongoDB Atlas connection working
-- [x] School and User models
-- [ ] Product and Order models
-- [ ] Auth routes
+- [x] School, User, Product, Order models
+- [x] Auth (register/login/profile) working
 - [ ] Product/Order APIs
 - [ ] AI agent
 - [ ] Frontend
