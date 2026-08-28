@@ -10,7 +10,11 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <Link to="/" className="brand">ShopMyUniform</Link>
+      <Link to="/" className="brand">
+        ShopMyUniform
+      </Link>
+      <Link to="/schools">Schools</Link>
+      <Link to="/products">Catalog</Link>
       <div className="nav-links">
         <Link to="/cart">Cart ({itemCount})</Link>
         {user ? (
