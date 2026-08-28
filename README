@@ -47,4 +47,4 @@ OPENAI_API_KEY=your_openai_key
 - [x] School and Product APIs working, seed script populates test data
 - [x] Order APIs working — verified stock decrements and price is recomputed server-side
 - [ ] AI agent
-- [ ] Frontend
+- [x] Frontend scaffolded — routing, AuthContext, CartContext, Navbar, Home page confirmed working
