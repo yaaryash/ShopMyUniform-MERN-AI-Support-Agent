@@ -1,0 +1,11 @@
+echo "# ShopMyUniform — MERN + AI Support Agent
+
+Work in progress. Sections will be filled in as each part is built.
+
+## Technology Stack
+- Frontend: React (Vite)
+- Backend: Node.js + Express
+- Database: MongoDB
+- AI: OpenAI API
+" > README.md
+
