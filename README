@@ -31,11 +31,17 @@ OPENAI_API_KEY=your_openai_key
 | POST | /api/auth/login | — | Login, returns JWT |
 | GET | /api/auth/profile | ✅ | Get logged-in user's profile |
 | PUT | /api/auth/profile | ✅ | Update profile |
+| GET | /api/schools | — | List all schools |
+| GET | /api/schools/:id | — | Get one school |
+| GET | /api/products | — | Search/filter products (query, school, grade, category, color, gender, minPrice, maxPrice) |
+| GET | /api/products/:id | — | Product details |
+| POST | /api/products | — | Create a product (used for seeding/demo) |
 
 ## Status
 - [x] Server + MongoDB Atlas connection working
 - [x] School, User, Product, Order models
 - [x] Auth (register/login/profile) working
-- [ ] Product/Order APIs
+- [x] School and Product APIs working, seed script populates test data
+- [ ] Order APIs
 - [ ] AI agent
 - [ ] Frontend
