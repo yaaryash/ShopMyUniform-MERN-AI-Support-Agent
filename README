@@ -36,12 +36,15 @@ OPENAI_API_KEY=your_openai_key
 | GET | /api/products | — | Search/filter products (query, school, grade, category, color, gender, minPrice, maxPrice) |
 | GET | /api/products/:id | — | Product details |
 | POST | /api/products | — | Create a product (used for seeding/demo) |
+| POST | /api/orders | ✅ | Place an order from cart items |
+| GET | /api/orders/my | ✅ | List logged-in user's orders |
+| GET | /api/orders/:id | ✅ | Order details + tracking history |
 
 ## Status
 - [x] Server + MongoDB Atlas connection working
 - [x] School, User, Product, Order models
 - [x] Auth (register/login/profile) working
 - [x] School and Product APIs working, seed script populates test data
-- [ ] Order APIs
+- [x] Order APIs working — verified stock decrements and price is recomputed server-side
 - [ ] AI agent
 - [ ] Frontend
