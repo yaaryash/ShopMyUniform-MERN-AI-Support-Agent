@@ -70,7 +70,7 @@ OPENAI_API_KEY=your_openai_key
 - [x] Register/Login pages — confirmed full round trip, persists across refresh
 - [x] Schools and Products (catalog) pages — search/filter confirmed against real data
 - [x] Product Details page — size selection with real stock data, out-of-stock sizes disabled, add-to-cart confirmed updating cart count
-- [ ] Cart, Checkout, Order pages
+- [x] Cart page — quantity updates, remove, live total, all confirmed working
 - [ ] AI chat widget UI
 - [ ] Styling
 - [ ] Deployment
