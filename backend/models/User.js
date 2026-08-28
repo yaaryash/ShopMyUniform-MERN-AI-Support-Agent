@@ -4,7 +4,7 @@ const userSchema = new mongoose.Schema(
   {
     name: { type: String, required: true },
     email: { type: String, required: true, unique: true, lowercase: true },
-    password: { type: String, required: true }, // bcrypt hash — hashing happens in authController, not here
+    password: { type: String, required: true },
     role: { type: String, enum: ["parent", "student"], default: "parent" },
     studentName: { type: String },
     grade: { type: String },

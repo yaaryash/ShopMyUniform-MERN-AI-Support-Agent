@@ -69,7 +69,7 @@ OPENAI_API_KEY=your_openai_key
 - [x] Frontend: routing, AuthContext, CartContext, Navbar
 - [x] Register/Login pages — confirmed full round trip, persists across refresh
 - [x] Schools and Products (catalog) pages — search/filter confirmed against real data
-- [ ] Product details page (size selection, add to cart)
+- [x] Product Details page — size selection with real stock data, out-of-stock sizes disabled, add-to-cart confirmed updating cart count
 - [ ] Cart, Checkout, Order pages
 - [ ] AI chat widget UI
 - [ ] Styling
