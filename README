@@ -48,3 +48,5 @@ OPENAI_API_KEY=your_openai_key
 - [x] Order APIs working — verified stock decrements and price is recomputed server-side
 - [ ] AI agent
 - [x] Frontend scaffolded — routing, AuthContext, CartContext, Navbar, Home page confirmed working
+- [x] Register/Login pages working — confirmed full round trip: form → backend → JWT stored → Navbar reflects logged-in state → persists across page refresh
+- [x] Schools and Products (catalog) pages working — search/filter by school, grade, category confirmed against real seeded data
