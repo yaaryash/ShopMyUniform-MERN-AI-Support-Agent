@@ -16,6 +16,7 @@ export default function Navbar() {
       <Link to="/schools">Schools</Link>
       <Link to="/products">Catalog</Link>
       <Link to="/orders">My Orders</Link>
+      <Link to="/profile">{user.name}</Link>
       <div className="nav-links">
         <Link to="/cart">Cart ({itemCount})</Link>
         {user ? (

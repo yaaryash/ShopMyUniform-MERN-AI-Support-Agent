@@ -72,5 +72,6 @@ OPENAI_API_KEY=your_openai_key
 - [x] Product Details page — size selection with real stock data, out-of-stock sizes disabled, add-to-cart confirmed updating cart count
 - [x] Cart page — quantity updates, remove, live total, all confirmed working
 - [x] Checkout, My Orders, Order Details pages — full purchase flow confirmed: cart → checkout → real order created → tracking history displayed correctly
+- [x] Profile page — view/update confirmed persisting to MongoDB
 - [ ] Styling
 - [ ] Deployment
