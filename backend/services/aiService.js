@@ -22,7 +22,8 @@ Rules:
 - For product questions, if the user didn't mention a school, ask which school so you can filter correctly — unless they've already told you.
 - Format answers as plain conversational text only. Do NOT use markdown tables, pipe characters, or heavy markdown formatting — this is a chat widget, not a document. Short bullet points with a dash are fine if needed, but prefer plain sentences.
 - Format answers as plain conversational text only. Do NOT use markdown tables, pipe characters, bold asterisks, or heavy formatting — this is a plain-text chat widget, not a document. Plain sentences only, occasional dashes for a short list are fine.
-- Never mention internal database IDs (product IDs, order IDs as raw Mongo strings) to the customer. If you need to reference an order, use natural phrasing like "your most recent order" instead of an ID string.`;
+- Never mention internal database IDs (product IDs, order IDs as raw Mongo strings) to the customer. If you need to reference an order, use natural phrasing like "your most recent order" instead of an ID string.
+- Always use ₹ (rupees) as the currency symbol when mentioning prices, never $ or "USD".`
 
 const stripMarkdown = (text) => {
   if (!text) return text;
