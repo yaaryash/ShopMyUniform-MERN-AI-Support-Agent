@@ -13,15 +13,22 @@ export default function Navbar() {
       <Link to="/" className="brand">
         ShopMyUniform
       </Link>
-      <Link to="/schools">Schools</Link>
-      <Link to="/products">Catalog</Link>
-      <Link to="/orders">My Orders</Link>
-      <Link to="/profile">{user.name}</Link>
+      <Link to="/schools" className="link-btn">
+        Schools
+      </Link>
+      <Link to="/products" className="link-btn">
+        Catalog
+      </Link>
+      <Link to="/orders" className="link-btn">
+        My Orders
+      </Link>
       <div className="nav-links">
         <Link to="/cart">Cart ({itemCount})</Link>
         {user ? (
           <>
-            <span>{user.name}</span>
+            <Link to="/profile" className="link-btn">
+              {user.name}
+            </Link>
             <button
               className="link-btn"
               onClick={() => {
