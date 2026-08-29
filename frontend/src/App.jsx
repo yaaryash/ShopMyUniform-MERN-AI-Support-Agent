@@ -11,6 +11,7 @@ import Checkout from "./pages/Checkout";
 import MyOrders from "./pages/MyOrders";
 import OrderDetails from "./pages/OrderDetails";
 import Profile from "./pages/Profile";
+import ChatWidget from "./components/ChatWidget";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
         </Routes>
       </main>
+      <ChatWidget />
     </div>
   );
 }

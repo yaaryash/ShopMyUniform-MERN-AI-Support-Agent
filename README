@@ -73,5 +73,7 @@ OPENAI_API_KEY=your_openai_key
 - [x] Cart page — quantity updates, remove, live total, all confirmed working
 - [x] Checkout, My Orders, Order Details pages — full purchase flow confirmed: cart → checkout → real order created → tracking history displayed correctly
 - [x] Profile page — view/update confirmed persisting to MongoDB
+- [x] AI chat widget — fully working, floating on every page, verified against real product/order data
+- Note: model output is sanitized server-side (stripMarkdown in aiService.js) since LLM markdown formatting (bold, tables) doesn't render in a plain-text chat widget — prompt instructions alone weren't fully reliable, so formatting is enforced in code as well
 - [ ] Styling
 - [ ] Deployment
