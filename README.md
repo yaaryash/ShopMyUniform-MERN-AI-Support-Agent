@@ -139,3 +139,11 @@ Given the assignment's own scope note (*"you do not need to build a production-l
 - [x] AI chat widget — floating on every page, verified against real product and order data
 - [x] Styling applied across the full application
 - [ ] Deployment (backend + frontend)
+
+## Demo
+[![Watch the demo]
+
+https://github.com/user-attachments/assets/0305e2dd-b344-4800-9b90-edbbb29c7065
+
+
+
