@@ -1,5 +1,13 @@
 # ShopMyUniform — MERN E-Commerce + AI Customer Support Agent
 
+
+## Live Demo
+- **Frontend (live app):** https://shop-my-uniform-mern-ai-support-age.vercel.app/
+- **Backend API:** https://shopmyuniform-backend.onrender.com
+
+> Note: the backend is hosted on Render's free tier, which spins down after 15 minutes of inactivity. If the site feels slow or the AI chat widget doesn't respond immediately on first load, the backend is waking up — this can take 10-30 seconds. Subsequent requests will be fast.
+
+
 ## Project Overview
 
 ShopMyUniform is a full-stack school uniform e-commerce platform built with the MERN stack (MongoDB, Express, React, Node.js). It includes user registration, school/grade-based product browsing, shopping cart, checkout, order tracking, and an AI-powered customer support chat widget embedded on every page.
@@ -138,12 +146,7 @@ Given the assignment's own scope note (*"you do not need to build a production-l
 - [x] Frontend — all required pages (registration, profile, school selection, catalog, product details, search, cart, checkout, order creation, my orders, order details) built and tested against the live backend
 - [x] AI chat widget — floating on every page, verified against real product and order data
 - [x] Styling applied across the full application
-- [ ] Deployment (backend + frontend)
-
-## Demo
-[![Watch the demo]
-
-https://github.com/user-attachments/assets/0305e2dd-b344-4800-9b90-edbbb29c7065
+- [x] Deployed — backend on Render, frontend on Vercel, both confirmed working end to end including live AI chat against real data
 
 
 
