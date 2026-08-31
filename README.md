@@ -147,6 +147,7 @@ Given the assignment's own scope note (*"you do not need to build a production-l
 - [x] AI chat widget — floating on every page, verified against real product and order data
 - [x] Styling applied across the full application
 - [x] Deployed — backend on Render, frontend on Vercel, both confirmed working end to end including live AI chat against real data
+- [x] Input validation (express-validator) on auth and order endpoints, rate limiting on AI chat endpoint
 
 
 
