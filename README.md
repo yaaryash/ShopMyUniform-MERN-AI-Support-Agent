@@ -148,6 +148,6 @@ Given the assignment's own scope note (*"you do not need to build a production-l
 - [x] Styling applied across the full application
 - [x] Deployed — backend on Render, frontend on Vercel, both confirmed working end to end including live AI chat against real data
 - [x] Input validation (express-validator) on auth and order endpoints, rate limiting on AI chat endpoint
-
+- [x] Dockerized backend — Dockerfile + docker-compose.yml, verified running and connecting to MongoDB Atlas inside a container
 
 
