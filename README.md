@@ -121,6 +121,12 @@ npm install
 # create frontend/.env using the variable listed above
 npm run dev        # starts on http://localhost:5173
 ```
+## Running with Docker (optional)
+The backend can also be run in a container instead of via `npm run dev`:
+```bash
+docker compose up --build
+```
+This builds the backend image and starts it on `http://localhost:5000`, reading environment variables from `backend/.env`. No local Node/npm installation needed — only Docker.
 
 **3. Try it**
 - Register an account, select a school, browse the catalog, add an item to your cart, and check out.
@@ -140,6 +146,16 @@ Given the assignment's own scope note (*"you do not need to build a production-l
 - **Cart is client-side** (React Context + localStorage), not its own MongoDB collection — it becomes a real, persisted `Order` document only at checkout, with price and stock re-validated against the database at that point.
 - **Return/exchange requests are explained, not filed** — the AI answers the policy and process (matching the assignment's example question directly) but there's no separate workflow/collection to submit and track an actual return request.
 
+## Testing
+Backend tests cover the two most critical pieces of logic: order stock/price integrity (server never trusts client-sent prices, correctly validates and decrements stock) and JWT auth middleware (rejects missing/invalid tokens, correctly attaches the authenticated user).
+
+```bash
+cd backend
+npm test
+```
+
+Uses Jest + Supertest + an in-memory MongoDB (`mongodb-memory-server`) so tests never touch real data.
+
 ## Status
 
 - [x] Backend — models, auth, schools, products, orders, and AI agent all built and tested end to end
@@ -149,5 +165,4 @@ Given the assignment's own scope note (*"you do not need to build a production-l
 - [x] Deployed — backend on Render, frontend on Vercel, both confirmed working end to end including live AI chat against real data
 - [x] Input validation (express-validator) on auth and order endpoints, rate limiting on AI chat endpoint
 - [x] Dockerized backend — Dockerfile + docker-compose.yml, verified running and connecting to MongoDB Atlas inside a container
-
-
+- [x] Backend test suite (Jest) — 6 tests covering order stock/price validation and auth middleware, all passing
